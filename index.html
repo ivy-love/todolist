@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="assets/css/font.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">    
+    <script src="assets/js/script.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div class="inner">
+            <h1 class="title">TO DO LIST</h1>
+            <form class="todoArea" action="submit.php" method="post">
+                <fieldset class="todoWrap">
+                    <div class="searchArea">
+                        <legend class="visually-hidden">검색</legend>
+                        <i class="textIcon"></i>
+                        <input type="text" id="inputBox" placeholder="할 일을 입력하세요!" value="">
+                    </div>
+                    <button type="button" id="addBtn">추가버튼</button>
+                </fieldset>
+            </form>
+            <div class="subtitleArea">
+                <h2 class="subTitle">Today Task</h2>
+                <button id="clearAll">Clear All</button>
+            </div>
+            <ul id="taskWrap"></ul>
+        </div>
+    </div>
+    <a id="goFigma" href="https://www.figma.com/file/JioFJe1tjewJWiZ7lGprVL/Untitled?type=design&node-id=0%3A1&mode=design&t=YezlWccyWsnnn7Qm-1" target="_blank">
+        Figma 바로가기
+    </a>
+</body>
+</html>

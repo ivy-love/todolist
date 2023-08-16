@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    color: var(--color-black);
+}
+body {
+    font-family: 'Noto Sans KR';
+    min-width: 32rem;
+}
+li {
+    list-style: none;
+}
+fieldset {
+    border: none;
+}
+button {
+    margin: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+.visually-hidden {
+    width: 0.1rem;
+    height: 0.1rem;
+    margin: -0.1rem;
+    overflow: hidden;
+}
+:root {
+    --color-white: #ffffff;
+    --color-black: #333333;
+    --color-gray: #AAAAAA;
+    --color-gray2: #CCCCCC;
+    --color-blue: #2A68FF;
+}
