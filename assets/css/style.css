@@ -78,7 +78,8 @@ input[type="text"]:focus {
     border-radius: 0.2rem;
 }
 #taskWrap > li {
-    height: 5.2rem;
+    height: 100%;
+    padding: 1rem 0 1.5rem;
     position: relative;
 }
 #taskWrap > li > .line {
@@ -98,14 +99,11 @@ input[type="checkbox"]:checked {
 input[type="checkbox"] + label {
     display: inline-block;
     width: 28rem;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    height: 100%;
+    margin-left: 20px;
     word-break: break-all;
-    position: absolute;
-    left: 2rem;
-    transform: translateY(50%);
     font-size: 1.6rem;
+    text-align: justify;
 }
 #deleteBtn {
     background: url("../img/delete.svg") no-repeat 100%;
