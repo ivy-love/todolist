@@ -82,6 +82,9 @@ input[type="text"]:focus {
     padding: 1rem 0 1.5rem;
     position: relative;
 }
+#taskWrap > li:first-child {
+    padding-top: 0;
+}
 #taskWrap > li > .line {
     position: absolute;
     width: 100%;
@@ -100,7 +103,7 @@ input[type="checkbox"] + label {
     display: inline-block;
     width: 28rem;
     height: 100%;
-    margin-left: 20px;
+    margin-left: 2rem;
     word-break: break-all;
     font-size: 1.6rem;
     text-align: justify;
@@ -116,16 +119,16 @@ input[type="checkbox"] + label {
     text-indent: -9999px;
 }
 #goFigma {
-    width: 150px;
-    height: 45px;
-    border-radius: 50px;
+    width: 15rem;
+    height: 4.5rem;
+    border-radius: 5rem;
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 5rem;
+    right: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 600;
     text-align: center;
     border: 1px solid var(--color-black);
