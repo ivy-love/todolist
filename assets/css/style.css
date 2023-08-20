@@ -62,7 +62,7 @@ input[type="text"]:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 2.2rem;
+    margin-bottom: 1.2rem;
 }
 .subTitle {
     font-size: 2rem;
@@ -82,9 +82,6 @@ input[type="text"]:focus {
     padding: 1rem 0 1.5rem;
     position: relative;
 }
-#taskWrap > li:first-child {
-    padding-top: 0;
-}
 #taskWrap > li > .line {
     position: absolute;
     width: 100%;
@@ -93,7 +90,7 @@ input[type="text"]:focus {
 input[type="checkbox"] {
     position: absolute;
     transform: translateY(-50%);
-    top: 50%;
+    top: calc(50% - 1px);
     cursor: pointer;
 }
 input[type="checkbox"]:checked {
