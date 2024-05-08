@@ -84,12 +84,34 @@ document.addEventListener('DOMContentLoaded', function() {
             focus();
         };
     };
+
+    // localstorage에 할 일 리스트 저장, #taskWrap > label
+   function saveItems() {
+        addTodo();
+
+        const saveItem = [];
+        const list = document.querySelector('#taskWrap label').textContent;
+
+        saveItem.push(list);
+        // console.log(JSON.stringify(saveItem))
+        localStorage.setItem('saved-item', JSON.stringify(saveItem));
+       
+    // console.log(saveItem)
+    }
+
+    // function getItem() {
+    //     saveItems();
+    //     const savedTodoList = localStorage.getItem('saved-items');
+    //     console.log(savedTodoList);
+    //     // saveItem.push(list);
+    // }
     
-    // 엔터 키 눌렀을 때 할 일 함수 호출
-    function enterList(e) {
-        if(e.keyCode === 13) {
-            addTodo();
-            e.preventDefault();
+   // 엔터 키 눌렀을 때 할 일 함수 호출
+   function enterList(e) {
+       if(e.keyCode === 13) {
+        saveItems();
+        //    getItem();
+           e.preventDefault();
         };
     };
     
